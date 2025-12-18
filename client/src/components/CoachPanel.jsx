@@ -24,7 +24,7 @@ export default function CoachPanel({ result }) {
         setError('');
 
         try {
-            const response = await axios.post((import.meta.env.SERVER_URL + '/api/assessment/verify-coach'), {
+            const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/api/assessment/verify-coach`, {
                 pin: coachPinInput
             });
 
@@ -70,7 +70,7 @@ export default function CoachPanel({ result }) {
                         </button>
                     </div>
                     {error && <div className="text-red-500 text-[11px] mt-1">{error}</div>}
-                    <div className="text-[11px] text-gray-500 mt-1">Default PIN: 1947 (Server-side check).</div>
+                    <div className="text-[11px] text-gray-500 mt-1">Default PIN: 1947</div>
                 </div>
             ) : (
                 <div id="coachUnlockedView" className="mt-1.5">
