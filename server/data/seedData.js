@@ -1,0 +1,36 @@
+export const questions = [
+    // Section A: Aptitude 
+    { section: 'A', qId: 1, text: "A train runs at 60 km/h. How far will it travel in 45 minutes?", options: [{ label: "30 km", value: "a" }, { label: "45 km", value: "b" }, { label: "50 km", value: "c" }, { label: "75 km", value: "d" }], correctOption: "b" },
+    { section: 'A', qId: 2, text: "If 3x – 5 = 16, what is the value of x?", options: [{ label: "5", value: "a" }, { label: "7", value: "b" }, { label: "9", value: "c" }, { label: "11", value: "d" }], correctOption: "b" },
+    { section: 'A', qId: 3, text: "Which number comes next in the series: 2, 6, 12, 20, ?", options: [{ label: "26", value: "a" }, { label: "30", value: "b" }, { label: "32", value: "c" }, { label: "34", value: "d" }], correctOption: "b" },
+    { section: 'A', qId: 4, text: "A father is 24 years older than his son. In 6 years, the father will be twice as old as the son. What is the son's present age?", options: [{ label: "12 years", value: "a" }, { label: "14 years", value: "b" }, { label: "18 years", value: "c" }, { label: "20 years", value: "d" }], correctOption: "c" },
+    { section: 'A', qId: 5, text: "Find the odd one out:", options: [{ label: "Captain", value: "a" }, { label: "Major", value: "b" }, { label: "Colonel", value: "c" }, { label: "Engineer", value: "d" }], correctOption: "d" },
+    { section: 'A', qId: 6, text: "Soldier : Army :: Sailor : ?", options: [{ label: "Ship", value: "a" }, { label: "Navy", value: "b" }, { label: "Water", value: "c" }, { label: "Ocean", value: "d" }], correctOption: "b" },
+    { section: 'A', qId: 7, text: "Which of the following qualities is MOST important for an officer on the battlefield?", options: [{ label: "Physical appearance", value: "a" }, { label: "Ability to make quick, sound decisions", value: "b" }, { label: "Speaking many languages", value: "c" }, { label: "Social media skills", value: "d" }], correctOption: "b" },
+    { section: 'A', qId: 8, text: "You see a road accident while going for an important exam. What is the BEST response?", options: [{ label: "Ignore and continue to exam", value: "a" }, { label: "Stop, ensure basic help and call ambulance/police, then proceed quickly", value: "b" }, { label: "Skip exam and stay there for hours", value: "c" }, { label: "Take photos and post on social media", value: "d" }], correctOption: "b" },
+    { section: 'A', qId: 9, text: "Which of the following is TRUE about discipline in the Armed Forces?", options: [{ label: "Discipline is optional if the officer is talented", value: "a" }, { label: "Discipline is only for jawans, not officers", value: "b" }, { label: "Discipline is a core value for everyone, including officers", value: "c" }, { label: "Discipline matters only during war", value: "d" }], correctOption: "c" },
+    { section: 'A', qId: 10, text: "Two candidates are equally intelligent. The FIRST is disciplined and honest, the SECOND is careless and dishonest. Who is more suitable as an officer?", options: [{ label: "First candidate", value: "a" }, { label: "Second candidate", value: "b" }, { label: "Both are same", value: "c" }, { label: "None of them", value: "d" }], correctOption: "a" },
+
+    // Section B: OLQ 
+    { section: 'B', qId: 1, name: "Effective Intelligence", factor: "I", text: "I can quickly understand a situation and think of practical solutions." },
+    { section: 'B', qId: 2, name: "Reasoning Ability", factor: "I", text: "I use logic and facts before reaching a conclusion." },
+    { section: 'B', qId: 3, name: "Organising Ability", factor: "I", text: "I can plan my day and tasks in an organised and efficient way." },
+    { section: 'B', qId: 4, name: "Power of Expression", factor: "I", text: "I can express my thoughts clearly in front of others." },
+    { section: 'B', qId: 5, name: "Social Adaptability", factor: "II", text: "I adjust easily with new people and environments." },
+    { section: 'B', qId: 6, name: "Cooperation", factor: "II", text: "I naturally help others and work well in teams." },
+    { section: 'B', qId: 7, name: "Sense of Responsibility", factor: "II", text: "When I take a task, I feel responsible to complete it properly." },
+    { section: 'B', qId: 8, name: "Initiative", factor: "II", text: "I take action without waiting for others to tell me." },
+    { section: 'B', qId: 9, name: "Self-Confidence", factor: "III", text: "I believe in my abilities without feeling superior to others." },
+    { section: 'B', qId: 10, name: "Speed of Decision", factor: "III", text: "I can take quick decisions when needed without getting confused." },
+    { section: 'B', qId: 11, name: "Ability to Influence Group", factor: "III", text: "In groups, my suggestions are often accepted by others." },
+    { section: 'B', qId: 12, name: "Liveliness", factor: "III", text: "I maintain a positive and cheerful attitude even during difficulties." },
+    { section: 'B', qId: 13, name: "Courage (Moral & Physical)", factor: "III", text: "I stand for what is right, even if I have to face difficulties." },
+    { section: 'B', qId: 14, name: "Determination", factor: "IV", text: "Once I set a goal, I keep working on it despite obstacles." },
+    { section: 'B', qId: 15, name: "Stamina", factor: "IV", text: "I can handle long study or physical work sessions without giving up." },
+    { section: 'B', qId: 16, name: "Stress Tolerance", factor: "IV", text: "I stay calm and functional even under pressure." },
+    { section: 'B', qId: 17, name: "Emotional Stability", factor: "IV", text: "I do not overreact emotionally; I stay balanced in most situations." },
+    { section: 'B', qId: 18, name: "Adaptability", factor: "IV", text: "I can change my plans and behaviour when the situation demands." },
+    { section: 'B', qId: 19, name: "Sense of Duty", factor: "IV", text: "I give importance to duty and commitments, even over personal comfort." },
+    { section: 'B', qId: 20, name: "Integrity", factor: "IV", text: "I am honest, and I avoid lying or cheating even in small matters." },
+    { section: 'B', qId: 21, name: "Fatigue Tolerance", factor: "IV", text: "I can keep working effectively even when I feel tired." }
+];

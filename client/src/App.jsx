@@ -25,7 +25,7 @@ export default function App() {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/assessment/questions');
+        const { data } = await axios.get(`${import.meta.env.VITE_SERVER_URL}/api/assessment/questions`);
 
         const aptitude = data.data.filter(q => q.section === 'A').sort((a, b) => a.qId - b.qId);
         const olq = data.data.filter(q => q.section === 'B').sort((a, b) => a.qId - b.qId);
@@ -64,7 +64,7 @@ export default function App() {
         olq: olqAnswers
       };
 
-      const response = await axios.post((import.meta.env.SERVER_URL + '/api/assessment/submit'), payload);
+      const response = await axios.post(`${import.meta.env.VITE_SERVER_URL}/api/assessment/submit`, payload);
 
       const backendResult = response.data.data;
 
@@ -77,7 +77,7 @@ export default function App() {
         normOlq: backendResult.scores.olqPercentage,
         compatibility: backendResult.scores.compatibility,
         factorScores: backendResult.factorBreakdown,
-        olqScores: backendResult.detailedOlq, // Detailed scores for Coach Panel
+        olqScores: backendResult.detailedOlq,
         top3: backendResult.top3,
         bottom3: backendResult.bottom3
       };
