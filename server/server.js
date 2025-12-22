@@ -23,7 +23,7 @@ app.use(
 app.use(helmet());
 app.use(express.json());
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV ) {
     app.use(morgan('dev'));
 }
 
