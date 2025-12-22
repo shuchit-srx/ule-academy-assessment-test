@@ -13,8 +13,14 @@ await connectDB();
 
 const app = express();
 
+app.use(
+    cors({
+        origin: ['http://localhost:5173', 'http://localhost:5174'],
+        credentials: true
+    })
+);
+
 app.use(helmet());
-app.use(cors());
 app.use(express.json());
 
 if (process.env.NODE_ENV === 'development') {
@@ -25,6 +31,7 @@ app.use('/api/assessment', assessmentRoutes);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Assessment server running on port ${PORT}`);
 });
